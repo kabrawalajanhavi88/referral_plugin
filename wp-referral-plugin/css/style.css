@@ -1,0 +1,21 @@
+/* Custom styles for referral form */
+#wp-referral-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+  
+}
+#wp-referral-form label {
+    display: block;
+    margin-bottom: .5em;
+}
+#wp-referral-form input {
+    width: 100%;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+#rp_referral_code_status {
+    display: inline-block;
+    margin-left: .5em;
+}
+
