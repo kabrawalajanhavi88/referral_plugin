@@ -1,0 +1,15 @@
+1) Select cl.name as clothes, co.name as color, cu.last_name, cu.fisrt_name from clothing_order as cl_order
+JOIN clothing as cl on cl_order.clothing_id = cl.id
+JOIN customer as cu on cl_order.customer_id = cu.id
+JOIN color as co on cl.color_id=co.id
+where cl.color_id = cu.favorite_color_id order by co.name ASC;
+
+2) Select main_distance, 
+SUM(age<20) as under_20, 
+SUM(age between 20 AND 29) as age_20_29,
+SUM(age between 30 AND 39) as age_30_39,
+SUM(age between 40 AND 49) as age_40_49,
+SUM(age >= 50) as over_50
+from runner group by main_distance;
+
+
